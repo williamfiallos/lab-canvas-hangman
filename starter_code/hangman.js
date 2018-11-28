@@ -1,8 +1,13 @@
 var hangman;
 
-// function Hangman() {
+function Hangman(words, secretWord, letters, guessedLetter, errorsLeft) {
+  this.words = [];
+  this.secretWord = "";
+  this.letters = [];
+  this.guessedLetter = "";
+  this.errorsLeft = 10;
 
-// }
+}
 
 // Hangman.prototype.getWord = function () {
 
