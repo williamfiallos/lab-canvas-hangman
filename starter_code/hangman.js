@@ -1,4 +1,6 @@
-var hangman;
+let hangman;
+let theGame;
+let theCanvas;
 
 function Hangman(words, secretWord, letters, guessedLetter, errorsLeft) {
   this.words = [];
@@ -18,8 +20,15 @@ Hangman.prototype.checkIfLetter = function (keyCode) {
   this.letters = this.secretWord.split("");
 };
 
-// Hangman.prototype.checkClickedLetters = function (key) {
-
+// Hangman.prototype.checkClickedLetters = function (pressedLetter) {
+//   if (this.letters.indexOf(pressedLetter.toLowerCase()) === -1) {
+//       this.letters.push(pressedLetter.toLowerCase());
+//       this.checkIfCorrect(pressedLetter);
+//       theCanvas.writeCorrectLetter(pressedLetter);
+//       this.xIndex = [];
+//       return true
+//     } return false
+//   };
 // };
 
 // Hangman.prototype.addCorrectLetter = function (i) {
