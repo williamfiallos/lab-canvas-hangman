@@ -6,16 +6,17 @@ function Hangman(words, secretWord, letters, guessedLetter, errorsLeft) {
   this.letters = [];
   this.guessedLetter = "";
   this.errorsLeft = 10;
-
+  
 }
 
 Hangman.prototype.getWord = function () {
   let randomWord = Math.floor(Math.random() * this.words.length);
+  this.secretWord = this.words[randomWord];
 };
 
-// Hangman.prototype.checkIfLetter = function (keyCode) {
-
-// };
+Hangman.prototype.checkIfLetter = function (keyCode) {
+  this.letters = this.secretWord.split("");
+};
 
 // Hangman.prototype.checkClickedLetters = function (key) {
 
