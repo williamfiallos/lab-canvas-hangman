@@ -9,9 +9,9 @@ function Hangman(words, secretWord, letters, guessedLetter, errorsLeft) {
 
 }
 
-// Hangman.prototype.getWord = function () {
-
-// };
+Hangman.prototype.getWord = function () {
+  let randomWord = Math.floor(Math.random() * this.words.length);
+};
 
 // Hangman.prototype.checkIfLetter = function (keyCode) {
 
